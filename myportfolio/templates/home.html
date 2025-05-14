@@ -1,15 +1,12 @@
+{% extends 'base.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
-    <script src="{% static 'js/scripts.js' %}"></script>
-</head>
-<body>
-    <h1>Welcome to My Portfolio</h1>
-    <p>This is a brief introduction to my portfolio.</p>
-</body>
-</html>
+{% block content %}
+<div id="div1">
+  <h1><span style="color: #ffffff;">Made by </span><br>NguyenHuuDung-2011</h1>
+  <p>Github: <a href="https://github.com/NguyenHuuDung-2011" target="_blank">github.com/NguyenHuuDung-2011</a></p>
+  <p>Twitter: <a href="https://twitter.com/HuuDung2011" target="_blank">twitter.com/HuuDung2011</a></p>
+</div>
+<div id="div2">
+  <p></p>
+</div>
+{% endblock content %}
